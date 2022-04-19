@@ -16,7 +16,7 @@ int main() {
       turn.insert(std::make_pair(command, count));
     } else if (command == next) {
       std::cout << "Gone Surname: " << turn.rbegin()->first << std::endl;
-      turn.erase(turn.rbegin()->first);
+      turn.erase(turn.begin()->first);
       count--;
     }
     for (std::map<std::string, int>::iterator it = turn.begin(); it != turn.end(); it++) {
